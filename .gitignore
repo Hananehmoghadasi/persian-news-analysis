@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+main_news.csv
+category_news.csv
+cleaned_news.csv
+outputs/cleaned_news.csv
