@@ -11,35 +11,36 @@
 بعد خواستم ببینم هر منبع چه واژه‌هایی بیشتر استفاده می‌کنه. اول یه فهرست stopword درست کردم (اولش خیلی کامل نبود، بعداً کامل‌ترش کردم چون واژه‌های عمومی مثل «اند» و «باید» داشتن توی خروجی می‌موندن). بعد TF-IDF رو اجرا کردم که ببینم هر منبع چه واژه‌های مخصوص خودش رو داره.
 
 آخرش هم چند تا نمودار کشیدم و نتایج رو توی `findings.md` نوشتم.
-
 ## ساختار پروژه
+
+```text
 .
-├── main_news.csv # داده اصلی (در این ریپو نیست، به علت حجم زیاد)
-├── category_news.csv # فایل دسته‌بندی (ادغام نشد، دلیلش پایین‌تره)
-├── analysis_corrected_persian.ipynb # نوت‌بوک اصلی
+├── main_news.csv                        # داده اصلی (در این ریپو نیست)
+├── category_news.csv                    # فایل دسته‌بندی
+├── analysis_corrected_persian.ipynb     # نوت‌بوک اصلی
 ├── requirements.txt
 ├── README.md
 ├── findings.md
 ├── executive_summary.md
 ├── .gitignore
 └── outputs/
-├── cleaning_test_results.csv
-├── top_20_words.csv
-├── top_words_by_topic.csv
-├── tfidf_distinctive_terms_by_source.csv
-├── relative_word_frequency_by_source.csv
-├── source_topic_percent.csv
-├── topic_group_counts.csv
-├── topic_group_manual_audit_sample.csv
-└── charts/
-├── 01_news_by_source.png
-├── 02_news_by_topic_group.png
-├── 03_word_count_distribution.png
-├── 04_median_words_by_topic.png
-└── 05_top_20_words.png
+    ├── cleaning_test_results.csv
+    ├── top_20_words.csv
+    ├── top_words_by_topic.csv
+    ├── tfidf_distinctive_terms_by_source.csv
+    ├── relative_word_frequency_by_source.csv
+    ├── source_topic_percent.csv
+    ├── topic_group_counts.csv
+    ├── topic_group_manual_audit_sample.csv
+    └── charts/
+        ├── 01_news_by_source.png
+        ├── 02_news_by_topic_group.png
+        ├── 03_word_count_distribution.png
+        ├── 04_median_words_by_topic.png
+        └── 05_top_20_words.png
 
 ## اجرا
-
+```bash
 pip install -r requirements.txt
 ## داده‌ها
 فایل‌های main_news.csv، category_news.csv و cleaned_news.csv به دلیل حجم زیاد در این ریپو قرار ندارند. برای اجرای پروژه، فایل اصلی رو از مخزن دیتاست دریافت کنید و در همان پوشه نوت‌بوک قرار دهید.
