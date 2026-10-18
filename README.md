@@ -38,9 +38,9 @@
         ├── 03_word_count_distribution.png
         ├── 04_median_words_by_topic.png
         └── 05_top_20_words.png
+```
 
 ## اجرا
-```bash
 pip install -r requirements.txt
 ## داده‌ها
 فایل‌های main_news.csv، category_news.csv و cleaned_news.csv به دلیل حجم زیاد در این ریپو قرار ندارند. برای اجرای پروژه، فایل اصلی رو از مخزن دیتاست دریافت کنید و در همان پوشه نوت‌بوک قرار دهید.
